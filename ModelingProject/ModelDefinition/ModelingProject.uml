@@ -1,0 +1,3196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="a1b844eb-e76b-49f8-870c-c25d0bd2e545"
+  name="ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="92b28ee8-be4d-4793-b5fd-eb7b847275c9">
+      <body>Выбор действия</body>
+      <annotatedElements>
+        <decisionNodeMoniker
+          Id="fac4aa40-ed62-4319-853a-5b0273cdf8b2"
+          LastKnownName="Decision1"
+          LastKnownLocation="ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="19ab1123-a2d2-4477-b136-4461767af952">
+      <body>Пользователь хочет добавить элемент в БД</body>
+      <annotatedElements>
+        <decisionNodeMoniker
+          Id="9d258f8a-f2dd-4fef-bc08-0557aa4223b8"
+          LastKnownName="Decision2"
+          LastKnownLocation="ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction
+        Id="11a87a65-5947-420d-8c88-4052127e55b4"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="f7af2b35-e1b1-475b-981a-dbd71cf22c3d"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="ace08334-d5b7-4e7d-8b9d-fc1e5b17d75b"
+                LastKnownName="Оконное приложение (главное окно)"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="dcc4100d-e86c-44d4-a8b2-f08b27996095"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="1aa19d9c-8b6c-44f5-9f6c-92d49ead6ddd"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="c30c0f51-4519-4e28-b9bb-41d97a637c27"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="1aa19d9c-8b6c-44f5-9f6c-92d49ead6ddd"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d1e1f4d0-2b6a-4d47-afc7-4369f0219a28"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ace08334-d5b7-4e7d-8b9d-fc1e5b17d75b"
+                LastKnownName="Оконное приложение (главное окно)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e78fe3f0-9d76-4d4f-9538-e93c0a22b044"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="9e3c255c-d8fa-46a2-84ad-3e940390d60b"
+                LastKnownName=": Пользователь"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c30c0f51-4519-4e28-b9bb-41d97a637c27"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="ace08334-d5b7-4e7d-8b9d-fc1e5b17d75b"
+                LastKnownName="Оконное приложение (главное окно)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="dcc4100d-e86c-44d4-a8b2-f08b27996095"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d991707a-b3fe-4fb0-a845-4686be338546"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ace08334-d5b7-4e7d-8b9d-fc1e5b17d75b"
+                LastKnownName="Оконное приложение (главное окно)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="936ef18a-8489-4c8c-9dd1-b0208da2229a"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0791e3dd-22bb-42a9-8644-2647c9cd2f57"
+                LastKnownName="Оконное приложение (окно свойств)"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="7e25f860-c5e1-49ab-acca-b7793e01d1bd"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="79de41ac-9a57-49e8-8397-cdeb832bc70f"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="ef2f4873-1e1d-4784-a58d-be44402b1b58"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9e3c84a1-856a-4945-9a84-9e743c295ec9"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="79de41ac-9a57-49e8-8397-cdeb832bc70f"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="1324e9d6-a165-4f87-a8cf-d5d9c2b09c1e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0791e3dd-22bb-42a9-8644-2647c9cd2f57"
+                LastKnownName="Оконное приложение (окно свойств)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5ef8aef3-8e96-47e9-b335-75b4455b4073"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="ace08334-d5b7-4e7d-8b9d-fc1e5b17d75b"
+                LastKnownName="Оконное приложение (главное окно)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ef2f4873-1e1d-4784-a58d-be44402b1b58"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="0791e3dd-22bb-42a9-8644-2647c9cd2f57"
+                LastKnownName="Оконное приложение (окно свойств)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="409fb1ce-2dbb-40a9-8751-21a4f31f108a"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="ace08334-d5b7-4e7d-8b9d-fc1e5b17d75b"
+                LastKnownName="Оконное приложение (главное окно)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9e3c84a1-856a-4945-9a84-9e743c295ec9"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="0791e3dd-22bb-42a9-8644-2647c9cd2f57"
+                LastKnownName="Оконное приложение (окно свойств)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="7e25f860-c5e1-49ab-acca-b7793e01d1bd"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="185359b6-b2d8-478b-8531-cd9ae70f25c8"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0791e3dd-22bb-42a9-8644-2647c9cd2f57"
+                LastKnownName="Оконное приложение (окно свойств)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="f46aa8b4-ebe2-45b9-b03f-8d65e9f54e53"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0791e3dd-22bb-42a9-8644-2647c9cd2f57"
+                LastKnownName="Оконное приложение (окно свойств)"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c4403efe-0120-4dd0-85a4-15df03d29f43"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="3c39ff0c-d4cc-462e-b27b-483627570449"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="021f7f00-9ca6-48dc-a847-feba31bffb8d"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="0529e104-16dc-453f-bc59-bf9d4b94b56d"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="3c39ff0c-d4cc-462e-b27b-483627570449"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="24530d36-ecd1-40a8-8113-45eab347243f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0791e3dd-22bb-42a9-8644-2647c9cd2f57"
+                LastKnownName="Оконное приложение (окно свойств)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="021f7f00-9ca6-48dc-a847-feba31bffb8d"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="0791e3dd-22bb-42a9-8644-2647c9cd2f57"
+                LastKnownName="Оконное приложение (окно свойств)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a3a83695-4255-40f2-b394-1dd28a0c4cfc"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="ace08334-d5b7-4e7d-8b9d-fc1e5b17d75b"
+                LastKnownName="Оконное приложение (главное окно)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0529e104-16dc-453f-bc59-bf9d4b94b56d"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="0791e3dd-22bb-42a9-8644-2647c9cd2f57"
+                LastKnownName="Оконное приложение (окно свойств)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="61bb3a73-1560-4529-8aa6-a42f101af15b"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="ace08334-d5b7-4e7d-8b9d-fc1e5b17d75b"
+                LastKnownName="Оконное приложение (главное окно)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c4403efe-0120-4dd0-85a4-15df03d29f43"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="54edf59c-96d6-426f-9c26-7b67c6a39acc"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0791e3dd-22bb-42a9-8644-2647c9cd2f57"
+                LastKnownName="Оконное приложение (окно свойств)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="221afb03-2884-4845-965d-63f5b331f6de"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="ace08334-d5b7-4e7d-8b9d-fc1e5b17d75b"
+                LastKnownName="Оконное приложение (главное окно)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="494c0a34-2896-4c9a-9f72-b7b8f07ef24e"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="ace08334-d5b7-4e7d-8b9d-fc1e5b17d75b"
+                LastKnownName="Оконное приложение (главное окно)"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="ea1f7dd6-7e68-4e67-9255-f0205f07d2b5"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="cc32ca94-6968-4d47-a03b-6d78a641c6eb"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="f9df4787-ca0d-4216-af80-89e2ce8be146"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="cc32ca94-6968-4d47-a03b-6d78a641c6eb"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7a30f3b4-8996-4cfe-8ee9-f6c7cd66bbd4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ace08334-d5b7-4e7d-8b9d-fc1e5b17d75b"
+                LastKnownName="Оконное приложение (главное окно)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f9df4787-ca0d-4216-af80-89e2ce8be146"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="ace08334-d5b7-4e7d-8b9d-fc1e5b17d75b"
+                LastKnownName="Оконное приложение (главное окно)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="ea1f7dd6-7e68-4e67-9255-f0205f07d2b5"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="93734c1c-6da7-4645-8611-afbda625d62b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ace08334-d5b7-4e7d-8b9d-fc1e5b17d75b"
+                LastKnownName="Оконное приложение (главное окно)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="519c21c7-86c8-4e40-84de-2543d04ae743"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="1c428c4d-671e-4e3b-83a5-d61f6c912d4f"
+                LastKnownName="Веб-приложение"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="68218eff-4c51-4ea2-b996-40aff82aaa55"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="94e72578-3053-47e8-b490-5818a0b8d8c8"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="ae70b9fa-dc48-4daf-a4d9-453686b0196d"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="94e72578-3053-47e8-b490-5818a0b8d8c8"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8886a2d5-9d02-48c8-b258-5ccd0098f898"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1c428c4d-671e-4e3b-83a5-d61f6c912d4f"
+                LastKnownName="Веб-приложение"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="36143646-be5f-443b-911e-3c0fe843d44c"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="ace08334-d5b7-4e7d-8b9d-fc1e5b17d75b"
+                LastKnownName="Оконное приложение (главное окно)"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ae70b9fa-dc48-4daf-a4d9-453686b0196d"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="1c428c4d-671e-4e3b-83a5-d61f6c912d4f"
+                LastKnownName="Веб-приложение"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="68218eff-4c51-4ea2-b996-40aff82aaa55"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="af0b1f59-7dbd-4e40-bb8c-2da0d5fbc15b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1c428c4d-671e-4e3b-83a5-d61f6c912d4f"
+                LastKnownName="Веб-приложение"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3893cec7-a868-4062-bf4f-607b057299e8"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="1c428c4d-671e-4e3b-83a5-d61f6c912d4f"
+                LastKnownName="Веб-приложение"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="ad0a73a2-f9ac-46c9-b127-ea4e6bbcb89e"
+            name="BehaviorExecutionSpecification10">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="1c428c4d-671e-4e3b-83a5-d61f6c912d4f"
+                LastKnownName="Веб-приложение"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="a69cd2a9-a1c1-43aa-9280-a4c318df3e5b"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="cdf6fd49-1ec3-4d3c-862c-e315a9946151"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="9ec3168b-5e21-4440-a65e-e08c29361e6e"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="cdf6fd49-1ec3-4d3c-862c-e315a9946151"
+            name="ExecutionOccurrenceSpecification19">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ed0bf0f6-bb20-4f28-b08d-93e0688882d5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1c428c4d-671e-4e3b-83a5-d61f6c912d4f"
+                LastKnownName="Веб-приложение"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9ec3168b-5e21-4440-a65e-e08c29361e6e"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="1c428c4d-671e-4e3b-83a5-d61f6c912d4f"
+                LastKnownName="Веб-приложение"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="a69cd2a9-a1c1-43aa-9280-a4c318df3e5b"
+            name="ExecutionOccurrenceSpecification20">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="027e0921-2c19-406f-a35c-0dfbec1c359a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1c428c4d-671e-4e3b-83a5-d61f6c912d4f"
+                LastKnownName="Веб-приложение"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="9e3c255c-d8fa-46a2-84ad-3e940390d60b"
+            name=": Пользователь"
+            isActor="true"
+            lifelineDisplayName=": Пользователь">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="e78fe3f0-9d76-4d4f-9538-e93c0a22b044"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="ace08334-d5b7-4e7d-8b9d-fc1e5b17d75b"
+            name="Оконное приложение (главное окно)"
+            isActor="false"
+            lifelineDisplayName="Оконное приложение (главное окно)">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="1aa19d9c-8b6c-44f5-9f6c-92d49ead6ddd"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="dcc4100d-e86c-44d4-a8b2-f08b27996095"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5ef8aef3-8e96-47e9-b335-75b4455b4073"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="409fb1ce-2dbb-40a9-8751-21a4f31f108a"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a3a83695-4255-40f2-b394-1dd28a0c4cfc"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="61bb3a73-1560-4529-8aa6-a42f101af15b"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="221afb03-2884-4845-965d-63f5b331f6de"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="cc32ca94-6968-4d47-a03b-6d78a641c6eb"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ea1f7dd6-7e68-4e67-9255-f0205f07d2b5"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="36143646-be5f-443b-911e-3c0fe843d44c"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="0791e3dd-22bb-42a9-8644-2647c9cd2f57"
+            name="Оконное приложение (окно свойств)"
+            isActor="false"
+            lifelineDisplayName="Оконное приложение (окно свойств)">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="79de41ac-9a57-49e8-8397-cdeb832bc70f"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="7e25f860-c5e1-49ab-acca-b7793e01d1bd"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3c39ff0c-d4cc-462e-b27b-483627570449"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c4403efe-0120-4dd0-85a4-15df03d29f43"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="1c428c4d-671e-4e3b-83a5-d61f6c912d4f"
+            name="Веб-приложение"
+            isActor="false"
+            lifelineDisplayName="Веб-приложение">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="94e72578-3053-47e8-b490-5818a0b8d8c8"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="68218eff-4c51-4ea2-b996-40aff82aaa55"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3893cec7-a868-4062-bf4f-607b057299e8"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="cdf6fd49-1ec3-4d3c-862c-e315a9946151"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a69cd2a9-a1c1-43aa-9280-a4c318df3e5b"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="c3297cb0-b096-44ab-b7b2-28689fb74c37"
+            name="Просмотр/изменение БД"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e78fe3f0-9d76-4d4f-9538-e93c0a22b044"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c30c0f51-4519-4e28-b9bb-41d97a637c27"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="629587c5-3d99-4afb-aad7-4058bbc91db6"
+            name="Изменение свойств выбранного элемента"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5ef8aef3-8e96-47e9-b335-75b4455b4073"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ef2f4873-1e1d-4784-a58d-be44402b1b58"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9dd6e0e0-dec0-4c92-8965-998e90c3a7a0"
+            name="Изменение элемента в БД"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9e3c84a1-856a-4945-9a84-9e743c295ec9"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="409fb1ce-2dbb-40a9-8751-21a4f31f108a"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="2fc00146-58f0-4f8f-908f-f49e81fc36fe"
+            name="Создание нового элемента"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a3a83695-4255-40f2-b394-1dd28a0c4cfc"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="021f7f00-9ca6-48dc-a847-feba31bffb8d"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="447f8fe8-f48e-4410-b1f9-e923eff5e2a4"
+            name="Добавление элемента в БД"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0529e104-16dc-453f-bc59-bf9d4b94b56d"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="61bb3a73-1560-4529-8aa6-a42f101af15b"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="b2fada87-8ac0-4567-9991-1b3b58e6d06b"
+            name="Удаление элемента из БД"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="221afb03-2884-4845-965d-63f5b331f6de"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f9df4787-ca0d-4216-af80-89e2ce8be146"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="5879e4a2-d260-4302-8d4a-4ebf7f0aae2a"
+            name="Построить график"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="36143646-be5f-443b-911e-3c0fe843d44c"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ae70b9fa-dc48-4daf-a4d9-453686b0196d"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="29d2b17b-4ba6-4e35-a860-0b9aa68a9c95"
+            name="Изменить значение параметров"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3893cec7-a868-4062-bf4f-607b057299e8"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9ec3168b-5e21-4440-a65e-e08c29361e6e"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d1e1f4d0-2b6a-4d47-afc7-4369f0219a28"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d991707a-b3fe-4fb0-a845-4686be338546"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="1324e9d6-a165-4f87-a8cf-d5d9c2b09c1e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="185359b6-b2d8-478b-8531-cd9ae70f25c8"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="24530d36-ecd1-40a8-8113-45eab347243f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="54edf59c-96d6-426f-9c26-7b67c6a39acc"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7a30f3b4-8996-4cfe-8ee9-f6c7cd66bbd4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="93734c1c-6da7-4645-8611-afbda625d62b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8886a2d5-9d02-48c8-b258-5ccd0098f898"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="af0b1f59-7dbd-4e40-bb8c-2da0d5fbc15b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ed0bf0f6-bb20-4f28-b08d-93e0688882d5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="027e0921-2c19-406f-a35c-0dfbec1c359a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b613e4cd-92a5-4abf-aaf3-37aa0794d679"
+        name="DataElement"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="48210b45-b81f-4c1d-bda0-dbf8f4f08c72"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="960caa4a-ef5e-4f33-b11b-c4a75cfc5df2"
+              LastKnownName="DataProcessor"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ea348030-59ce-40f6-a7f5-0989b57c0f2d"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7f30867c-4462-4cea-ac3c-8eae092a35bf"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5f04a5d8-021b-4942-89af-b785403cda9a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4e2a1e42-f6b3-4cff-909b-af90dc49b991"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="fa25ef88-9ebd-4e3b-9048-4dae50e1d11f"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString
+                Id="44f68a99-dcb0-4714-a94f-e7c65b3c0c63"
+                name="DefaultValue"
+                value="0" />
+            </defaultValue>
+          </property>
+          <property
+            Id="a3b2529c-0d4a-4aa2-bfba-3d3ee07300b7"
+            name="BKNumber"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a4dd86c8-d12c-4e97-9b89-2dd24cfc45bc"
+            name="HeadClue"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="371688e6-4dd8-4787-b11e-e16689c0e4b3"
+            name="SingCode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a95f58c5-622e-4067-9975-9fec5715b6e9"
+            name="EquationNameRus"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="87cb68d0-864e-446b-8459-43cab9664155"
+            name="EquationNameEng"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8c237dc4-caf4-42c4-aedd-de7d03529b5a"
+            name="EquationJS"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9e52c150-6792-4aa1-8ce1-ea4f4354b455"
+            name="EquationCoefficientsJS"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7a9f95dc-290c-44f4-b9a5-45ab3f647be8"
+            name="Xmin"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e7e16761-b76e-4a17-af8e-130026bee9e7"
+                LastKnownName="Double"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="65d84b9b-d338-4c07-90b8-7d6796dedc92"
+            name="Xmax"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e7e16761-b76e-4a17-af8e-130026bee9e7"
+                LastKnownName="Double"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9138730d-e63f-449e-b02b-06faa2b03f44"
+            name="Xaxis"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="aae6a471-91e5-4a6a-8a0d-a0615fa4413d"
+            name="Xmeasure"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2dc9dc32-c06e-48f8-82e7-d4471c2a2e68"
+            name="Yaxis"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3b2d8ff8-4ea7-408f-814b-ae7a37dbc623"
+            name="Ymeasure"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0af38e2b-cd9c-47f4-9097-227cc8037eb4"
+            name="Params"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6abe3e2c-1e75-4cc5-a81f-943a6693fdb9"
+            name="Comment"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3cc9d990-e043-49a8-b895-ac46066f8712"
+            name="Copy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c9a0ed0c-38c0-4e9e-abe3-f08af26fd950"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b613e4cd-92a5-4abf-aaf3-37aa0794d679"
+                      LastKnownName="DataElement"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6841b3d5-8703-4a4f-be33-2c60f0db7795"
+            name="Contains"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="612f0596-6c19-45a4-97ec-1980c31b5df8"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="65e9369b-1447-443d-a617-bc8b66ca881a"
+                  name="text"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="960caa4a-ef5e-4f33-b11b-c4a75cfc5df2"
+        name="DataProcessor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="e60af359-3053-4a00-bf13-7a5fdac81fe4">
+            <classMoniker
+              Id="e6aa0985-3b19-4309-812d-aedfedaefe41"
+              LastKnownName="struct Param"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="5e1fca80-3b7e-46af-8dfe-4b65c97e897b"
+            name="_elements"
+            visibility="Private"
+            isLeaf="true"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d9a6d49-2df3-4d57-80d7-f3accd0e304c"
+                LastKnownName="ObservableCollection&lt;DataElement&gt;"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="62188ddc-c1e6-4037-885d-a5723681a26a"
+            name="connectionString"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="true"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e7087abf-1c3e-4dca-93fe-f7db01dade51"
+            name="sqlExpression"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7062a857-7c59-46e8-8199-77129fe070ab"
+            name="Elements"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="eef36bf5-8e86-442e-91ab-f48f46a6a41a"
+            name="CheckForNull"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0c118df0-14e6-40ab-9cec-0816064a2487"
+                  name="param"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d7ac7e1e-586c-4412-a798-0a8536be3741"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3c42b106-0153-496b-bfa5-14fb9d91dc77"
+            name="AddElement"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="db278fa0-a2d7-4846-9894-b0c12d868eeb"
+                  name="item"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b613e4cd-92a5-4abf-aaf3-37aa0794d679"
+                      LastKnownName="DataElement"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fdfcd2dc-d519-41f3-8fe3-c736152261d9"
+            name="DeleteElement"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9dccdcb7-c423-4564-9375-7b13235aef53"
+                  name="element"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b613e4cd-92a5-4abf-aaf3-37aa0794d679"
+                      LastKnownName="DataElement"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0e30b03c-ec01-45e1-a9b4-2e330e24f5e2"
+            name="AddElementToDB"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e8727658-b373-4491-b2c1-a81247947408"
+                  name="element"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b613e4cd-92a5-4abf-aaf3-37aa0794d679"
+                      LastKnownName="DataElement"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c0038b81-a709-4d1b-a346-a66e8a52de85"
+            name="UpdateElement"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="68c18f58-96f7-4e84-8bb7-94ddc8addc1f"
+                  name="element"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b613e4cd-92a5-4abf-aaf3-37aa0794d679"
+                      LastKnownName="DataElement"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3c67fb80-de6b-468e-8415-3194306f2bfa"
+            name="ReadFilesFromDatabase"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0fd2d621-e1f0-402c-a8e8-4778e09b3d90"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7d9a6d49-2df3-4d57-80d7-f3accd0e304c"
+                      LastKnownName="ObservableCollection&lt;DataElement&gt;"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="72678ed0-42b1-42c9-89bd-e9c94792a100"
+            name="GetElemByID"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6ab4c27f-3560-48f2-adb7-0a412957d796"
+                  name="id"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b1f3dfa4-d4c7-4f5f-bd3b-6f7e5beed6fa"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b613e4cd-92a5-4abf-aaf3-37aa0794d679"
+                      LastKnownName="DataElement"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6a203dd0-df86-4da3-876b-33ff93fcfc70"
+            name="GetParams"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c8c9277f-4312-4cd0-9348-37dbc6652432"
+                  name="xmlString"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c019236e-3e45-4562-854a-ef108a723f90"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b085f1a3-c967-4175-b504-dd6b9aa723c6"
+                      LastKnownName="List&lt;Param&gt;"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8b0a39e4-1853-4917-82d9-74b50cd1927f"
+            name="ParamValidation"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9d5442f8-8e02-450b-9b3b-5eaa690af676"
+                  name="par"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c8250410-daeb-4155-949a-bc6b63b511d7"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1f7ec7d9-41da-4cf0-aa35-c616640558b3"
+            name="ElementLoad"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="682b55db-57c1-4094-898a-35babbf0380b"
+                  name="ElemID"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6799f364-5b64-4153-8996-35c90be94fc9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b613e4cd-92a5-4abf-aaf3-37aa0794d679"
+                      LastKnownName="DataElement"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="e7e16761-b76e-4a17-af8e-130026bee9e7"
+        name="Double" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="feb45067-6e11-4626-90c5-e6227595bcc6"
+        name="Dop" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7d9a6d49-2df3-4d57-80d7-f3accd0e304c"
+        name="ObservableCollection&lt;DataElement&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7bdc5ab8-2ce2-4a72-8753-7f8d852a09c5"
+        name="DataEle" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="b085f1a3-c967-4175-b504-dd6b9aa723c6"
+        name="List&lt;Param&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e6aa0985-3b19-4309-812d-aedfedaefe41"
+        name="struct Param"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <description>Структура</description>
+        <ownedAttributesInternal>
+          <property
+            Id="a6c870b2-895e-4150-ae8f-4b0aeb5e317a"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="64887c40-e596-4e47-b939-cd014bef0135"
+            name="Min"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e7e16761-b76e-4a17-af8e-130026bee9e7"
+                LastKnownName="Double"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="12a21035-9a01-4de0-bfe0-d332a60eef67"
+            name="Max"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e7e16761-b76e-4a17-af8e-130026bee9e7"
+                LastKnownName="Double"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="bb09bdc6-a410-40a0-a98c-3e4d3455089d"
+            name="Description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f2bb60c4-27ad-4b65-ba54-9d3a909655ee"
+        name="CSharpExecuter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="1df656a7-4d0b-4f51-9dd3-59e3072b5357"
+            name="formatedProgramText"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0a378e95-a7b1-4c80-842d-ba5625f979fc"
+            name="IsSuccessful"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c9bef44c-6f48-440d-b819-a9ef2483e118"
+            name="Refferences"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5cad14c0-832b-4819-8454-a5dbc229f809"
+                LastKnownName="List&lt;string&gt;"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8f39291b-2428-4bfc-9973-3f9ba5c34d4b"
+            name="Usings"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5cad14c0-832b-4819-8454-a5dbc229f809"
+                LastKnownName="List&lt;string&gt;"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7214ae8b-2232-4fd5-8c5d-00ed8dfeff20"
+            name="header"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="480b2e8f-62d1-4733-a1c9-92aabd055630"
+            name="footer"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="970acd6b-0b79-428c-89e8-9a4c4aa186aa"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="52a61f9a-6c12-43d3-937b-20d42439113e"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5d82b63c-142c-4505-ae83-4c0f82917e45"
+                  name="program"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="04ffaf81-546c-4721-a925-3f5eb94b3c88"
+            name="FormatSources"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="afb83e5e-08ce-4507-b844-608fbebb83db"
+                  name="text"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9380fefe-c3b4-49e0-ba7b-6d78adf523c9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c44ba760-0e50-46c2-acad-add73c4da9f3"
+            name="FormatUsings"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ca42e8f3-c518-4247-adc2-6e6c2fe6cde7"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5cad14c0-832b-4819-8454-a5dbc229f809"
+        name="List&lt;string&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ef0e1374-ea3a-48e3-a92d-73727ee5cd92"
+        name="MainWindow.xaml.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="c059af4d-7b62-4bfa-98e2-20f24e7806dd">
+            <classMoniker
+              Id="b1a5080a-984e-4aff-abbe-8948b5386ba6"
+              LastKnownName="WebForm1.aspx.cs"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="68629481-1307-49cb-95fe-6351b5901df0"
+            isDerived="false"
+            sourceEndRoleName="MainWindow"
+            targetEndRoleName="PropertiesWindow"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="69b274f7-c609-49f2-b628-4c620cf36063"
+              LastKnownName="PropertiesWindow.xaml.cs"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c6275fe0-d9db-42db-b602-5e9de3650c52"
+                  name="MainWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1f9655a2-e2b0-47a2-a1a8-f4e6abd8dda4"
+                  name="PropertiesWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="2dfe734b-f8ea-41a7-aa64-8352450fbbe8"
+            name="dataGrid_MouseDoubleClick"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="461b8481-ce89-4284-8b0e-3eeb25da2c60"
+                  name="sender"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cb9d78fa-c6e0-4392-b8c2-1fba6a138399"
+                      LastKnownName="Object"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fe17ea84-b58b-4426-9e2e-d7b8a89643eb"
+                  name="e"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="43d182e4-4478-4794-a519-46115e62c0e2"
+                      LastKnownName="MouseButtonEventArgs"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="01ad8516-a576-4eb5-b4e7-85f3ab150fea"
+            name="DataSelectionChanged"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c9c9ff42-6ceb-490e-86dd-14398fc15fcb"
+                  name="sender"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cb9d78fa-c6e0-4392-b8c2-1fba6a138399"
+                      LastKnownName="Object"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5cc4e580-b335-4a4e-a078-4c8de76723a3"
+                  name="e"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f4a71219-a0fb-42fa-8dce-4aa8ac4be597"
+                      LastKnownName="SelectionChangedEventArgs"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="899c8fd8-1161-464e-a6f0-237a5fe0a502"
+            name="ButtonAdd_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a36debe8-1cab-437d-8e3a-866c5c551418"
+                  name="sender"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cb9d78fa-c6e0-4392-b8c2-1fba6a138399"
+                      LastKnownName="Object"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eea177b8-708c-4c2c-b0f2-1da0b7366175"
+                  name="e"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="85ec4087-1ebf-462e-9d34-c3a1c52fa0f6"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a71dfac3-d671-4c73-a8ca-87fc2eb01825"
+            name="ButtonEdit_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b9f40c76-62a9-4e14-91bb-986330887c34"
+                  name="sender"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cb9d78fa-c6e0-4392-b8c2-1fba6a138399"
+                      LastKnownName="Object"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3881b0b2-a532-4e9d-8bd3-d1d2179b001d"
+                  name="e"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="85ec4087-1ebf-462e-9d34-c3a1c52fa0f6"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7f3dc713-0ad6-4d7e-9bc1-1694e5983f2a"
+            name="ButtonDelete_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ff957fe2-998c-4a6f-96b6-88668d0f6d72"
+                  name="sender"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cb9d78fa-c6e0-4392-b8c2-1fba6a138399"
+                      LastKnownName="Object"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="17304e4c-8a7b-4355-a6ff-2ab1a1f9a313"
+                  name="e"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="85ec4087-1ebf-462e-9d34-c3a1c52fa0f6"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2594a713-1c4e-40b5-aae3-99ccf212e806"
+            name="ButtonDraw_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="806fdf77-dee4-4041-9f42-33d2a9d26ae7"
+                  name="sender"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cb9d78fa-c6e0-4392-b8c2-1fba6a138399"
+                      LastKnownName="Object"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f57a444c-7483-4e2d-9c47-fb61b042277e"
+                  name="e"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="85ec4087-1ebf-462e-9d34-c3a1c52fa0f6"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="35c36641-385b-476a-af42-35879635050a"
+            name="SearchTextBox_TextChanged"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a94bdd7f-2c56-484d-8838-5ccaef94b4ac"
+                  name="sender"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cb9d78fa-c6e0-4392-b8c2-1fba6a138399"
+                      LastKnownName="Object"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="44acaf31-a7e9-4ff2-acdd-39bfb5c9417f"
+                  name="e"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4a1d962e-9fe1-4cb6-996a-517a977f37c9"
+                      LastKnownName="TextChangedEventArgs"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="cb9d78fa-c6e0-4392-b8c2-1fba6a138399"
+        name="Object" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="43d182e4-4478-4794-a519-46115e62c0e2"
+        name="MouseButtonEventArgs" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f4a71219-a0fb-42fa-8dce-4aa8ac4be597"
+        name="SelectionChangedEventArgs" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="85ec4087-1ebf-462e-9d34-c3a1c52fa0f6"
+        name="RoutedEventArgs" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4a1d962e-9fe1-4cb6-996a-517a977f37c9"
+        name="TextChangedEventArgs" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="69b274f7-c609-49f2-b628-4c620cf36063"
+        name="PropertiesWindow.xaml.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="7f7c7e76-8609-4866-b8be-ef6227fe595e"
+            isDerived="false"
+            sourceEndRoleName="PropertiesWindow"
+            targetEndRoleName="CSharpExecuter"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f2bb60c4-27ad-4b65-ba54-9d3a909655ee"
+              LastKnownName="CSharpExecuter"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5208b15e-12a3-4d03-b47a-797c7786cd97"
+                  name="PropertiesWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d88bc34d-e3d3-4cff-9f4d-9c0ce70647e4"
+                  name="CSharpExecuter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0e723c43-114e-4c8e-bd3f-0a5b26821486"
+            isDerived="false"
+            sourceEndRoleName="PropertiesWindow"
+            targetEndRoleName="DataElement"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b613e4cd-92a5-4abf-aaf3-37aa0794d679"
+              LastKnownName="DataElement"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f429001e-dc2c-4982-b0c1-e7cb210a4d6c"
+                  name="PropertiesWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="06be6269-ed05-4e8f-9eee-503d68edc583"
+                  name="DataElement"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="957c1631-6edc-47e7-8817-d13d6847e01e"
+            name="Data"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="b613e4cd-92a5-4abf-aaf3-37aa0794d679"
+                LastKnownName="DataElement"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ddff81af-5a68-4a4c-a4ea-4f71d492c76a"
+            name="Position"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="180a8eb6-643b-402b-9f06-3ff02881ccbe"
+            name="NewEl"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="355370e7-f261-4c5c-b35d-78d7c7b3a101"
+            name="ButtonOK_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="16cd574f-fa9c-40cb-8cef-db11865d4491"
+                  name="sender"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cb9d78fa-c6e0-4392-b8c2-1fba6a138399"
+                      LastKnownName="Object"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2458a485-cbd2-4f2d-b712-cc5d2a973610"
+                  name="e"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="85ec4087-1ebf-462e-9d34-c3a1c52fa0f6"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3070a9f1-e9fb-44bf-8db3-a4355f6acdf8"
+            name="NumberValidation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="afafdfb0-f268-4598-b75e-5e63de3dbd03"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e5bae68e-62a4-4fbd-b325-454eada613ee"
+            name="ParValidation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0b775b9c-a0bd-450d-b05a-44b87b6e00f3"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b1a5080a-984e-4aff-abbe-8948b5386ba6"
+        name="WebForm1.aspx.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="631c0c87-8357-49d8-a94b-e190290aa97c">
+            <classMoniker
+              Id="0d61aaf6-7527-404a-bcbe-0ba85583f4cd"
+              LastKnownName="Global.asax.cs"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="dba347c5-0369-4c6e-9561-3deb030e1920"
+            name="ElemID"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e91154e4-d758-4afe-a511-de008e5bcb2b"
+            name="element"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="b613e4cd-92a5-4abf-aaf3-37aa0794d679"
+                LastKnownName="DataElement"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b25f391d-a650-4c23-bc15-aac58ea6c87a"
+            name="paramFormat"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="true"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1db661be-2fd5-4dae-a7ec-a921f7eced2a"
+            name="Page_Load"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="82d5d60b-5118-4881-b118-e17812f1ed61"
+                  name="sender"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cb9d78fa-c6e0-4392-b8c2-1fba6a138399"
+                      LastKnownName="Object"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="06bd4348-ebe4-4c5e-b7b5-bd15117c64a6"
+                  name="e"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d20311e1-0895-40be-ad13-6bdd7126429a"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d20311e1-0895-40be-ad13-6bdd7126429a"
+        name="EventArgs" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0d61aaf6-7527-404a-bcbe-0ba85583f4cd"
+        name="Global.asax.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="1f7a50a3-bbc8-4f1e-bf5b-0d1b6587d6a3"
+            name="Application_Start"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fbc84d3f-46a2-4ba2-aa83-b6dc305bafea"
+                  name="sender"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cb9d78fa-c6e0-4392-b8c2-1fba6a138399"
+                      LastKnownName="Object"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="18bc7d95-4261-499f-9864-318d503cb408"
+                  name="e"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d20311e1-0895-40be-ad13-6bdd7126429a"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="85f28755-59a7-48d1-b078-b45345aeea9e"
+            name="RegisterRoutes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4f781e61-20f5-474a-8935-3aa94f1a9d08"
+                  name="routes"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="539f861a-1975-4ec7-92af-551e356f6be0"
+                      LastKnownName="RouteCollection"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="539f861a-1975-4ec7-92af-551e356f6be0"
+        name="RouteCollection" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="f5af4429-79aa-4a30-b7e3-c6a27a1600e6"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="0494d134-1570-41d1-99ee-ceac4986a93a"
+            name="Запуск оконного приложения"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d2d92e40-82a8-47d9-83d9-2096ea548ae5"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="0b36b309-a53b-4100-82c7-366aba3eb2ce"
+                  LastKnownName="Join1"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="f7762e56-c76f-4676-a843-d639236c2c5f"
+            name="Выбор элемента"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="542aa2e2-09c2-48ba-af0b-681f39445ff7"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="fac4aa40-ed62-4319-853a-5b0273cdf8b2"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="fac4aa40-ed62-4319-853a-5b0273cdf8b2"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="020ff4bb-04ad-4b1a-893a-6865e76974ae"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="b292d2b8-8ca3-4835-8069-74d83b097dc0"
+                  LastKnownName="Удалить элемент"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="eb6284f3-c566-4d77-ba0b-0fc3cf55128d"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="16e144e4-73a8-4b15-8469-74bc35f2a80d"
+                  LastKnownName="Изменить элемент"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="4e1ed9b1-6596-4a5c-8e41-68838b094400"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="cde0b51f-5813-4649-81b3-ab60351ea067"
+                  LastKnownName="Построить график"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="9d258f8a-f2dd-4fef-bc08-0557aa4223b8"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0db90037-08ea-4c9d-93bc-78536969f0a7"
+                guard="Нет"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f7762e56-c76f-4676-a843-d639236c2c5f"
+                  LastKnownName="Выбор элемента"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="454eb865-ac46-48b3-b531-aa40487a8398"
+                guard="Да"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="c614a952-9ea1-4dc7-b346-e13ac950f5f1"
+                  LastKnownName="Ввести свойства элемента"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <sendSignalAction
+            Id="c614a952-9ea1-4dc7-b346-e13ac950f5f1"
+            name="Ввести свойства элемента"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="36ef9b63-7c3b-4fdf-9297-23a7aabe0282"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c9ca7750-e6ed-4670-bdc5-29e60d1d0b80"
+                  LastKnownName="Добавление элемента в БД"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <opaqueAction
+            Id="c9ca7750-e6ed-4670-bdc5-29e60d1d0b80"
+            name="Добавление элемента в БД"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e0411394-bee1-492e-8503-2c9139c29b90"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="0b36b309-a53b-4100-82c7-366aba3eb2ce"
+                  LastKnownName="Join1"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d58a6e5a-f257-43ae-87f9-f54ca63e03f5"
+            name="Удалить элемент из БД"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1ffcc668-2e83-4654-9520-f13d4a853a84"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="0b36b309-a53b-4100-82c7-366aba3eb2ce"
+                  LastKnownName="Join1"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <sendSignalAction
+            Id="b292d2b8-8ca3-4835-8069-74d83b097dc0"
+            name="Удалить элемент"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f5074696-6679-4327-83dd-388684a14c12"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d58a6e5a-f257-43ae-87f9-f54ca63e03f5"
+                  LastKnownName="Удалить элемент из БД"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <sendSignalAction
+            Id="16e144e4-73a8-4b15-8469-74bc35f2a80d"
+            name="Изменить элемент"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="aa17b198-e8bd-43fb-80e8-87780efcc904"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="76659054-1b4b-414d-b645-535ed1812c5f"
+                  LastKnownName="Изменить свойства"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <opaqueAction
+            Id="76659054-1b4b-414d-b645-535ed1812c5f"
+            name="Изменить свойства"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="33c10c17-6c34-4fda-abff-77564c40d287"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="63a3cb25-d4b9-44e3-b880-1f1f87cd3ad3"
+                  LastKnownName="Внести изменения в БД"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="63a3cb25-d4b9-44e3-b880-1f1f87cd3ad3"
+            name="Внести изменения в БД"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f08aa1f3-3bdc-4075-9e12-0e738726e1c6"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="0b36b309-a53b-4100-82c7-366aba3eb2ce"
+                  LastKnownName="Join1"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <sendSignalAction
+            Id="cde0b51f-5813-4649-81b3-ab60351ea067"
+            name="Построить график"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="24c3c8f6-0c2c-4a39-a465-a068d3ceb559"
+                isLeaf="false">
+                <acceptEventActionMoniker
+                  Id="a4d0d337-385f-49b6-ad34-978790bd34af"
+                  LastKnownName="Открыть браузер"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <acceptEventAction
+            Id="a4d0d337-385f-49b6-ad34-978790bd34af"
+            name="Открыть браузер"
+            isLeaf="false"
+            isUnmarshall="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="38f89d58-ec7f-4de4-859f-26d81a92c9b1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5efbaa8f-59aa-46bc-8b85-ac4683e35f28"
+                  LastKnownName="Построить график"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <opaqueAction
+            Id="5efbaa8f-59aa-46bc-8b85-ac4683e35f28"
+            name="Построить график"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="69138199-6033-4337-91b0-b6cc9e48ee12"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1233da28-4639-45d3-ace6-e8715916a9fb"
+                  LastKnownName="Перестраивание графика"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1233da28-4639-45d3-ace6-e8715916a9fb"
+            name="Перестраивание графика"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="491448ad-9b3e-4206-b1fa-0ee6af6f78e1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1233da28-4639-45d3-ace6-e8715916a9fb"
+                  LastKnownName="Перестраивание графика"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="631abc0e-7d41-485b-b3f1-d4edc376605a"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="0849efa7-a34f-484e-b984-82f69a889da8"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="0b36b309-a53b-4100-82c7-366aba3eb2ce"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e3efeb07-74c7-4a07-a31c-be4096594bd7"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="9d258f8a-f2dd-4fef-bc08-0557aa4223b8"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <activityFinalNode
+            Id="0849efa7-a34f-484e-b984-82f69a889da8"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

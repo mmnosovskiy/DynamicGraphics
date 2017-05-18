@@ -38,7 +38,6 @@
             var step = (xmax - xmin) / 100;
             step = Math.round(step * 1000000) / 1000000;
             for (var i = 0, j = xmin; i < 100; i++) {
-                console.log(i);
                 j = Math.round(j * 1000000) / 1000000;           
                 arr[i] = [j, f(j)];
                 j += step;

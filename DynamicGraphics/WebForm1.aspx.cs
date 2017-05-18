@@ -62,6 +62,10 @@ namespace DynamicGraphics
         /// <param name="e"></param>
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Установка точки в качестве десятичного разделителя.
+            NumberFormatInfo provider = new NumberFormatInfo();
+            provider.NumberDecimalSeparator = ".";
+
             Label[] lab = new Label[] { Label0, Label1, Label2, Label3 }; //Массив Label[] для параметров.
             TextBox[] txtbx1 = new TextBox[] { TextBox0, TextBox1, TextBox2, TextBox3 }; //Массив TextBox[] для параметров.
 
@@ -72,6 +76,7 @@ namespace DynamicGraphics
                 string id = RouteData.Values["id"].ToString();
                 ElemID = Convert.ToInt32(id);
             }
+            ElemID = 25;
             //Получение элемента из базы данных по ID.
             element = DataProcessor.ElementLoad(ElemID);
             //Подготовка строки JS-скрипта.
@@ -84,8 +89,8 @@ namespace DynamicGraphics
                 for (int i = 0; i < list.Count; i++)
                 {
                     paramStr += string.Format(paramFormat, list[i].Name, i) + ";\n";
-                    validationScript += string.Format(validationFormat, i, list[i].Min, list[i].Max) + ";\n";
-                    sliderScript += string.Format(sliderFormat, i, list[i].Min, list[i].Max) + "\n";
+                    validationScript += string.Format(provider, validationFormat, i, list[i].Min, list[i].Max) + ";\n";
+                    sliderScript += string.Format(provider, sliderFormat, i, list[i].Min, list[i].Max) + "\n";
                     lab[i].Visible = lab[i].Enabled = true;
                     lab[i].Text = list[i].Name + " = ";
                     txtbx1[i].Visible = txtbx1[i].Enabled = true;

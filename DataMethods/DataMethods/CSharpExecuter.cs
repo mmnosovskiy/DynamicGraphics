@@ -51,11 +51,13 @@ namespace DataMethods
         public CSharpExecuter()
         {
             //Инициализация сборок, которые будут добавлены по умолчанию
+            Refferences = new List<string>();
             Refferences.AddRange(new string[]
                  {
                     "System.dll"
                  });
             //Инициализация using которые будут добавлены по умолчанию
+            Usings = new List<string>();
             Usings.AddRange(new string[]
              {
                     "System"

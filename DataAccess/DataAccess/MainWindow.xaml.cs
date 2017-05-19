@@ -81,11 +81,11 @@ namespace DataAccess
         /// <param name="e"></param>
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
-            if (dataGrid.SelectedItems != null) //Выбран ли элемент?
+            if (dataGrid.SelectedItems.Count > 0) //Выбраны ли элементы?
             {
                 if (MessageBox.Show("Вы уверены? ", "Внимание!", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                 {
-                    DataProcessor.DeleteElement(dataGrid.SelectedItems); //Удаление элемента из коллекции и из базы данных.
+                    DataProcessor.DeleteElement(dataGrid.SelectedItems); //Удаление элементов из коллекции и из базы данных.
                 }
             }
             else

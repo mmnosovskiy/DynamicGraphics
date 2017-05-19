@@ -56,26 +56,30 @@ namespace DataMethods
         /// <summary>
         /// Метод для удаления элемента из коллекции и из базы данных.
         /// </summary>
-        /// <param name="element"></param>
-        public static void DeleteElement(DataElement element)
+        /// <param name="elements"></param>
+        public static void DeleteElement(System.Collections.IList elements)
         {
+            object[] els = new object[elements.Count];
+            elements.CopyTo(els, 0); //копирование выделенных элементов в массив.
             sqlExpression = "sp_DeleteElement"; //Название хранимой процедуры.
             using (SqlConnection connection = new SqlConnection(connectionString)) //Подключение к базе данных.
             {
                 connection.Open(); //Открытие подключения.
                 //Создание объекта хранимой процедуры.
                 SqlCommand command = new SqlCommand(sqlExpression, connection); 
-                command.CommandType = System.Data.CommandType.StoredProcedure;  
+                command.CommandType = System.Data.CommandType.StoredProcedure;
                 //Создание параметров процедуры.
                 SqlParameter idP = new SqlParameter
                 {
-                    ParameterName = "@id",
-                    Value = element.ID
+                    ParameterName = "@id"
                 };
-                command.Parameters.Add(idP); //Добавление параметров процедуры
-                command.ExecuteNonQuery(); //Выполнение процедуры.
-
-                _elements.Remove(element); //Удаление элемента из коллекции.
+                command.Parameters.Add(idP); //Добавление параметров процедуры.
+                for (int i = 0; i < els.Length; i++)
+                {
+                    idP.Value = ((DataElement)els[i]).ID;//Установка значения параметра
+                    command.ExecuteNonQuery(); //Выполнение процедуры.
+                    _elements.Remove((DataElement)els[i]); //Удаление элемента из коллекции.
+                }
             }
         }
         /// <summary>

@@ -71,7 +71,7 @@ namespace DynamicGraphics
 
             //Получение ID элемента из роута.
             Route myRoute = RouteData.Route as Route;
-            if (myRoute != null && (myRoute.Url == "{id}" || myRoute.Url == "Graphics/{id}" || myRoute.Url == "WebForm1.aspx/{id}"))
+            if (myRoute != null && myRoute.Url == "{id}")
             {
                 string id = RouteData.Values["id"].ToString();
                 ElemID = Convert.ToInt32(id);

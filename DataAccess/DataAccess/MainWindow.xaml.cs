@@ -81,16 +81,16 @@ namespace DataAccess
         /// <param name="e"></param>
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
-            if (dataGrid.SelectedItem != null) //Выбран ли элемент?
+            if (dataGrid.SelectedItems != null) //Выбран ли элемент?
             {
-                if (MessageBox.Show("Вы уверены ? ", "Внимание!", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                if (MessageBox.Show("Вы уверены? ", "Внимание!", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                 {
-                    DataProcessor.DeleteElement((DataElement)dataGrid.SelectedItem); //Удаление элемента из коллекции и из базы данных.
+                    DataProcessor.DeleteElement(dataGrid.SelectedItems); //Удаление элемента из коллекции и из базы данных.
                 }
             }
             else
             {
-                MessageBox.Show("Нет выбранного элемента", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Нет выбранных элементов", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
         /// <summary>

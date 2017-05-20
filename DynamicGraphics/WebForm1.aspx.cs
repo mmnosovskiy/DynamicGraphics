@@ -79,7 +79,6 @@ namespace DynamicGraphics
                 string id = RouteData.Values["id"].ToString();
                 ElemID = Convert.ToInt32(id);
             }
-            ElemID = 22;
             //Получение элемента из базы данных по ID.
             element = DataProcessor.ElementLoad(ElemID);
             //Подготовка строки JS-скрипта.

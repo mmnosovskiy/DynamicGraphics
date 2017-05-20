@@ -43,10 +43,11 @@ namespace DynamicGraphics
             var min{0} = {1};
             var max{0} = {2};
             var val{0} = Number(document.getElementById('TextBox{0}').value);
-            if (val{0} != NaN && min{0} <= val{0} && max{0} >= val{0} && ((!validError0 && !validError1 && !validError2 && !validError3) || validError{0})) {{
+            if (val{0} != NaN && min{0} <= val{0} && max{0} >= val{0}) {{
                 $('#TextBox{0}').css('border', '');
                 $('#slider{0}').slider(" + "\"value\"" + @", val{0});
-                drawChart();
+                validError{0} = false;
+                if ({3}) drawChart();
     }}
             else {{
                     validError{0} = true;
@@ -55,7 +56,8 @@ namespace DynamicGraphics
                 }})
             }}
         }}";
-        
+        readonly static string validFormat = @"!validError{0} && !validError{1} && !validError{2}";
+
         /// <summary>
         /// Метод, выполняющийся при загрузке страницы.
         /// </summary>
@@ -90,7 +92,21 @@ namespace DynamicGraphics
                 for (int i = 0; i < list.Count; i++)
                 {
                     paramStr += string.Format(paramFormat, list[i].Name, i) + ";\n";
-                    validationScript += string.Format(provider, validationFormat, i, list[i].Min, list[i].Max) + ";\n";
+                    switch (i)
+                    {
+                        case 0:
+                            validationScript += string.Format(provider, validationFormat, i, list[i].Min, list[i].Max, string.Format(validFormat, 1, 2, 3)) + ";\n";
+                            break;
+                        case 1:
+                            validationScript += string.Format(provider, validationFormat, i, list[i].Min, list[i].Max, string.Format(validFormat, 0, 2, 3)) + ";\n";
+                            break;
+                        case 2:
+                            validationScript += string.Format(provider, validationFormat, i, list[i].Min, list[i].Max, string.Format(validFormat, 0, 1, 3)) + ";\n";
+                            break;
+                        case 3:
+                            validationScript += string.Format(provider, validationFormat, i, list[i].Min, list[i].Max, string.Format(validFormat, 0, 1, 2)) + ";\n";
+                            break;
+                    }
                     sliderScript += string.Format(provider, sliderFormat, i, list[i].Min, list[i].Max) + "\n";
                     lab[i].Visible = lab[i].Enabled = true;
                     lab[i].Text = list[i].Name + " = ";
@@ -103,6 +119,8 @@ namespace DynamicGraphics
             NewScript.Text = scriptText;
             //Добавление загаловка в разметку страницы.
             TitleLit.Text = element.EquationNameRus;
+            //Добавление формулы зависимости под загаловком.
+            Func.Text = element.EquationJS;
         }
     }
 }

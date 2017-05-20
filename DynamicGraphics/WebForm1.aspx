@@ -58,7 +58,7 @@
             data.addColumn('number', yax);
 
             data.addRows(createArr());
-
+            
             var options = {
                 height: 450,
                 width: 1250,
@@ -94,6 +94,9 @@
     </script>
     <form id="form1" onsubmit="return false;" runat="server">
         <div>
+            <div class="text-center">
+            <asp:Label runat="server" ID="Func" Font-Size="Medium" Font-Bold="true"></asp:Label>
+                </div>
             <div id="graph_div"></div>
             <div id="sliders_div">
                 <div class="col-lg-3 col-lg-offset-1">

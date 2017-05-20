@@ -35,7 +35,7 @@ namespace DynamicGraphics
                 min: {1},
                 max: {2},
                 step: 0.01
-            }})" + "\nfunction setInputsFromSlider{0}() {{\n$('#TextBox{0}').val($('#slider{0}').slider(\"value\"));\n $('#TextBox{0}').css('border', '');\n drawChart();\n }}" + "\nfunction setInputsFromSlider_{0}() {{\n$('#TextBox{0}').val($('#slider{0}').slider(\"value\"));\n}}";
+            }})" + "\nfunction setInputsFromSlider{0}() {{\n$('#TextBox{0}').val($('#slider{0}').slider(\"value\"));\n validError{0} = false;\n$('#TextBox{0}').css('border', '');\n if (!validError0 && !validError1 && !validError2 && !validError3) drawChart();\n }}" + "\nfunction setInputsFromSlider_{0}() {{\n$('#TextBox{0}').val($('#slider{0}').slider(\"value\"));\n}}";
         /// <summary>
         /// Формат создания методов валидации в разметке.
         /// </summary>
@@ -43,12 +43,13 @@ namespace DynamicGraphics
             var min{0} = {1};
             var max{0} = {2};
             var val{0} = Number(document.getElementById('TextBox{0}').value);
-            if (val{0} != NaN && min{0} <= val{0} && max{0} >= val{0}) {{
+            if (val{0} != NaN && min{0} <= val{0} && max{0} >= val{0} && ((!validError0 && !validError1 && !validError2 && !validError3) || validError{0})) {{
                 $('#TextBox{0}').css('border', '');
                 $('#slider{0}').slider(" + "\"value\"" + @", val{0});
                 drawChart();
     }}
             else {{
+                    validError{0} = true;
                 $('#TextBox{0}').css({{
         'border': '3px solid red'
                 }})
@@ -76,6 +77,7 @@ namespace DynamicGraphics
                 string id = RouteData.Values["id"].ToString();
                 ElemID = Convert.ToInt32(id);
             }
+            ElemID = 22;
             //Получение элемента из базы данных по ID.
             element = DataProcessor.ElementLoad(ElemID);
             //Подготовка строки JS-скрипта.

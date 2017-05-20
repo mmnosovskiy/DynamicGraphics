@@ -100,7 +100,7 @@ namespace DataAccess
         /// <param name="e"></param>
         private void ButtonDraw_Click(object sender, RoutedEventArgs e)
         {
-            string url = @"http://localhost/Graphics/" + ((DataElement)dataGrid.SelectedItem).ID; //Формирование роута.
+            string url = @"http://dyngraphs.imet-db.ru/Graphics/" + ((DataElement)dataGrid.SelectedItem).ID; //Формирование роута.
             
             Process.Start(url); //Переход в веб-приложение.
         }

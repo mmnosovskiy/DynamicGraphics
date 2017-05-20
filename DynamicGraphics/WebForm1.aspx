@@ -29,6 +29,12 @@
 
     <script type="text/javascript">
 
+        var validError0 = false;
+        var validError1 = false;
+        var validError2 = false;
+        var validError3 = false;
+
+
         google.charts.load('current', { 'packages': ['corechart'] });
         google.charts.setOnLoadCallback(drawChart);
 

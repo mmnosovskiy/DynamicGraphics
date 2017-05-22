@@ -32,12 +32,12 @@
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0" Margin="5" Width="70" ToolTip="ID зависимости в БД">ID</Label>
             <TextBox Name="ID" Grid.Column="1" Text="{Binding ID}" Margin="5" IsEnabled="False" VerticalAlignment="Center"></TextBox>
-            <Label Grid.Column="2" Margin="5" Width="70" ToolTip="HeadClue">HeadClue</Label>
+            <Label Grid.Column="2" Margin="5" Width="70" ToolTip="ID соединения">HeadClue</Label>
             <TextBox Name="HeadClue" Grid.Column="3" Text="{Binding HeadClue}" Margin="5" VerticalAlignment="Center"></TextBox>
 
-            <Label Grid.Row="1" Grid.Column="0" Margin="5" Width="70" Content="SingCode"/>
+            <Label Grid.Row="1" Grid.Column="0" Margin="5" Width="70" ToolTip="Сингония" Content="SingCode"/>
             <TextBox Name="SingCode" Grid.Row="1" Grid.Column="1" Text="{Binding SingCode}" Margin="5" VerticalAlignment="Center"></TextBox>
-            <Label Grid.Row="1" Grid.Column="2" Margin="5" Width="70" ToolTip="NomProp">NomProp</Label>
+            <Label Grid.Row="1" Grid.Column="2" Margin="5" Width="70" ToolTip="Номер свойства">NomProp</Label>
             <TextBox Name="NomProp" Grid.Row="1" Grid.Column="3" Text="{Binding NomProp}" Margin="5" VerticalAlignment="Center"></TextBox>
         </Grid>
         <Grid Grid.Row="1" Margin="5">
@@ -95,10 +95,10 @@
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0" Grid.Column="0" Margin="5" Width="40" HorizontalAlignment="Left">Xmin</Label>
-            <TextBox Name="Xmin" Grid.Row="0" Grid.Column="1" Text="{Binding Xmin}" Margin="5" ToolTip="Минимальное значение переменной"></TextBox>
-            <Label Grid.Row="0" Grid.Column="2" Margin="5" Width="40" HorizontalAlignment="Left">Xmax</Label>
-            <TextBox Name="Xmax" Grid.Row="0" Grid.Column="3" Text="{Binding Xmax}" Margin="5" Width="100" ToolTip="Максимальное значение переменной"></TextBox>
+            <Label Grid.Row="0" Grid.Column="0" Margin="5" Width="40" HorizontalAlignment="Left" ToolTip="Минимальное значение переменной">Xmin</Label>
+            <TextBox Name="Xmin" Grid.Row="0" Grid.Column="1" Text="{Binding Xmin}" Margin="5"></TextBox>
+            <Label Grid.Row="0" Grid.Column="2" Margin="5" Width="40" HorizontalAlignment="Left" ToolTip="Максимальное значение переменной">Xmax</Label>
+            <TextBox Name="Xmax" Grid.Row="0" Grid.Column="3" Text="{Binding Xmax}" Margin="5" Width="100"></TextBox>
             <Label Grid.Row="0" Grid.Column="4" Margin="5" Width="40" HorizontalAlignment="Left" ToolTip="Легенда оси X">Xaxis</Label>
             <TextBox Name="Xaxis" Grid.Row="0" Grid.Column="5" Text="{Binding Xaxis}" Margin="5" Width="100"></TextBox>
             <Label Grid.Row="0" Grid.Column="6" Margin="5" Width="70" ToolTip="Единицы измерения X">Xmeasure</Label>
@@ -118,7 +118,7 @@
 
             <Label Grid.Column="0" Margin="5" Width="100" HorizontalAlignment="Left" ToolTip="Комментарий">Comment</Label>
             <TextBox Name="Comment" Grid.Column="1" Text="{Binding Comment}" Margin="5"></TextBox>
-            <Label Grid.Column="2" Margin="5" Width="100">BKNumber</Label>
+            <Label Grid.Column="2" Margin="5" Width="100" ToolTip="Номер библиографической ссылки">BKNumber</Label>
             <TextBox Name="BKNumber" Grid.Column="3" Text="{Binding BKNumber}" Margin="5"></TextBox>
         </Grid>
         <Grid Grid.Row="6">

@@ -37,7 +37,7 @@
     <NamingMethod>Guid</NamingMethod>
     <HelpTitle>DynamicGraphics Class Library</HelpTitle>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
-    <VisibleItems>Attributes, InheritedMembers, InheritedFrameworkMembers, Internals, Privates, PrivateFields, Protected, SealedProtected, ProtectedInternalAsProtected, PublicCompilerGenerated</VisibleItems>
+    <VisibleItems>Attributes, Internals, Privates, PrivateFields, Protected, ProtectedInternalAsProtected, PublicCompilerGenerated</VisibleItems>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\DataMethods\DataMethods\DataMethods.csproj" />
       <DocumentationSource sourceFile="..\DynamicGraphics\DynamicGraphics.csproj" />

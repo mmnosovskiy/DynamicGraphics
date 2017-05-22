@@ -22,19 +22,19 @@
         "Entry"
         {
         "MsmKey" = "8:_1F292D4343C88249A68340B4EE281A32"
-        "OwnerKey" = "8:_EE5A39126EB34D5F962E6C2B80E6E6F6"
+        "OwnerKey" = "8:_C1D58D0058E248538A5869C33404EC7E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C1D58D0058E248538A5869C33404EC7E"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_D647A8A11FC767BECC17D40AE4EFA302"
-        "OwnerKey" = "8:_EE5A39126EB34D5F962E6C2B80E6E6F6"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_EE5A39126EB34D5F962E6C2B80E6E6F6"
-        "OwnerKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_C1D58D0058E248538A5869C33404EC7E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -46,7 +46,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EE5A39126EB34D5F962E6C2B80E6E6F6"
+        "OwnerKey" = "8:_C1D58D0058E248538A5869C33404EC7E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -240,7 +240,7 @@
         {
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_7C03A2B50AA54B56989531D7F34AA6DF"
             {
-            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -289,7 +289,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:DynamicGraphics"
         "ProductCode" = "8:{F5C5A853-7510-4503-BACB-F9D3DABF5E8E}"
-        "PackageCode" = "8:{27C77197-F5E0-425D-B0BD-9AFA4F9A6EC1}"
+        "PackageCode" = "8:{25750ED4-F167-404A-93CB-AA820308BBB4}"
         "UpgradeCode" = "8:{346B8686-D4C1-421D-A862-5BD2F93094A9}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -310,7 +310,7 @@
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:1"
+        "TargetPlatform" = "3:0"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"
@@ -409,7 +409,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_8FB9E08D0AB642FABCF73FAD9480DAF9"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_D5460EAC1EE34B27B8FBC0C6AA15D62B"
             {
             "Name" = "8:DynamicGraphics"
             "Arguments" = "8:"
@@ -417,7 +417,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_EE5A39126EB34D5F962E6C2B80E6E6F6"
+            "Target" = "8:_C1D58D0058E248538A5869C33404EC7E"
             "Folder" = "8:_FE6C042B01994B3AA91A53AB29972D13"
             "WorkingFolder" = "8:_7C03A2B50AA54B56989531D7F34AA6DF"
             "Icon" = "8:_0F7F7E711311430C9B3D83C77FE645DF"
@@ -822,7 +822,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EE5A39126EB34D5F962E6C2B80E6E6F6"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_C1D58D0058E248538A5869C33404EC7E"
             {
             "SourcePath" = "8:..\\DataAccess\\DataAccess\\obj\\Debug\\DataAccess.exe"
             "TargetName" = "8:"

@@ -60,7 +60,7 @@ namespace DataAccess
             {
                 MessageBox.Show("Числовые поля заданы некорректно!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-            else if (SingCode.Text == "" || EquationNameRus.Text == "" || EquationJS.Text == "")
+            else if (EquationNameRus.Text == "" || EquationJS.Text == "")
             {
                 MessageBox.Show("Не все обязательные поля заполнены!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
             }

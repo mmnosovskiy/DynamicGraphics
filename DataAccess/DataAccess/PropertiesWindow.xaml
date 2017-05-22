@@ -34,8 +34,8 @@
             <TextBox Name="ID" Grid.Column="1" Text="{Binding ID}" Margin="5" IsEnabled="False" VerticalAlignment="Center"></TextBox>
             <Label Grid.Column="2" Margin="5" Width="70" ToolTip="HeadClue">HeadClue</Label>
             <TextBox Name="HeadClue" Grid.Column="3" Text="{Binding HeadClue}" Margin="5" VerticalAlignment="Center"></TextBox>
-            
-            <Label Grid.Row="1" Grid.Column="0" Margin="5" Width="70">SingCode*</Label>
+
+            <Label Grid.Row="1" Grid.Column="0" Margin="5" Width="70" Content="SingCode"/>
             <TextBox Name="SingCode" Grid.Row="1" Grid.Column="1" Text="{Binding SingCode}" Margin="5" VerticalAlignment="Center"></TextBox>
             <Label Grid.Row="1" Grid.Column="2" Margin="5" Width="70" ToolTip="NomProp">NomProp</Label>
             <TextBox Name="NomProp" Grid.Row="1" Grid.Column="3" Text="{Binding NomProp}" Margin="5" VerticalAlignment="Center"></TextBox>

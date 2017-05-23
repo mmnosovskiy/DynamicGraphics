@@ -79,6 +79,7 @@ namespace DynamicGraphics
                 string id = RouteData.Values["id"].ToString();
                 ElemID = Convert.ToInt32(id);
             }
+            else Response.Redirect(@"http://dyngraphs.imet-db.ru/Graphics");
             //Получение элемента из базы данных по ID.
             element = DataProcessor.ElementLoad(ElemID);
             //Подготовка строки JS-скрипта.

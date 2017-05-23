@@ -11,6 +11,9 @@ namespace DynamicGraphics
     /// </summary>
     public partial class WebFormList : System.Web.UI.Page
     {
+        /// <summary>
+        /// Поле, содержащее список функциональных зависимостей.
+        /// </summary>
         ObservableCollection<DataElement> list;
         /// <summary>
         /// Метод, выполняющийся при загрузке страницы WebFormList.aspx

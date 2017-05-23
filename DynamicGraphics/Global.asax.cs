@@ -24,6 +24,7 @@ namespace DynamicGraphics
         static void RegisterRoutes(RouteCollection routes)
         {
             routes.MapPageRoute("R1", "{id}", "~/WebForm1.aspx");
+            routes.MapPageRoute("R2", "", "~/WebFormList.aspx");
         }
     }
 }
